@@ -4,6 +4,7 @@ public class StringCalculator {
 		int sum=0;
 		//Replace comma to space
 		String digitStr = numbers.replaceAll(",", " ");
+		digitStr = digitStr.replaceAll("\n", " ");
 		// Remove extra spaces from the beginning
         // and the ending of the string
 		digitStr = digitStr.trim();

@@ -12,11 +12,11 @@ public class StringCalculatorTest {
 	@Test
 	public void test2() {
 		StringCalculator calObj=new StringCalculator();
-		assertEquals(2,calObj.add("1,1"),0.0);
+		assertEquals(2,calObj.add("1\n1"),0.0);
 	}
 	@Test
 	public void test3() {
 		StringCalculator calObj=new StringCalculator();
-		assertEquals(7,calObj.add("1,2,4"),0.0);
+		assertEquals(7,calObj.add("1,2\n4"),0.0);
 	}
 }
