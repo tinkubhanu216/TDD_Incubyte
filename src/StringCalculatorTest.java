@@ -34,4 +34,24 @@ public class StringCalculatorTest {
 			System.out.println(e);
 		}
 	}
+	@Test
+	public void test4() {
+		StringCalculator calObj=new StringCalculator();
+		try {
+			assertEquals(6,calObj.add("//[***]\\n1***2***3"),0.0);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			System.out.println(e);
+		}
+	}
+	@Test
+	public void test5() {
+		StringCalculator calObj=new StringCalculator();
+		try {
+			assertEquals(3,calObj.add("//[***]\\n1***2***1003"),0.0);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			System.out.println(e);
+		}
+	}
 }

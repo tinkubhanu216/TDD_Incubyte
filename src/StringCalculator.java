@@ -24,7 +24,10 @@ public class StringCalculator {
 			String[] numArray = digitStr.split(" ");
 			for(int i=0;i<numArray.length;i++) {
 				int num=Integer.parseInt(numArray[i]);
-				sum+=num;
+				if(num<=1000) {
+					sum+=num;
+				}
+				
 			}			
 		}
 		return sum;
